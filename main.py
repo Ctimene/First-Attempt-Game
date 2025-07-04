@@ -2,19 +2,17 @@ import pygame
 
 pygame.init()
 
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
-
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+window_size = window_width, window_height = 800, 600
+pygame.display.set_caption("My First Pygame")
 
 player = pygame.Rect((300, 250, 50, 50))
 
 run = True
 while run:
 
-    screen.fill((0, 0, 0,))
+    window_size.fill((0, 0, 0,))
 
-    pygame.draw.rect(screen, (255, 0,0), player)
+    pygame.draw.rect(window_size, (255, 0, 0), player)
 
     key = pygame.key.get_pressed()
     if key[pygame.K_a] == True:
@@ -25,10 +23,17 @@ while run:
         player.move_ip(0, -2)
     elif key[pygame.K_s] == True:
         player.move_ip(0, 2)
+    elif key[pygame.K_c] == True:
+        if window_size.fill == (0, 0, 0):
+            window_size.fill((255, 255, 255))
+            pygame.draw.rect(window_size, (0, 255, 0), player)
+        else:
+            window_size.fill((0, 0, 0))
+            pygame.draw.rect(window_size, (255, 0, 0), player)
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            run = False
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
         
     pygame.display.update()
 
