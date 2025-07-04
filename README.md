@@ -1,5 +1,5 @@
 # First-Attempt-Game
-Third Project created for Athena Project (First Attempt at a Game)
+Third Project created for the Athena Award (First Attempt at a Game)
 
 This is a very simple website with a link and instructions on how to play my first Pygame.
 
