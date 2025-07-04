@@ -7,3 +7,5 @@ The website contains mostly text, with a button linked to my code, created using
 
 This really isn't anything special, I just wanted the time I spent on this game to be worth it. (As well as the unmentionable amount of time it took me to be able to download Pygames on this God-forsaken computer.)
 I'm going to continue to work using Pygame in the hopes that this will be the most basic project I've made using Pygames.
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
